@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import EcommImg from "../../public/images/projects/AngelloEcommerce.png";
+import EcommImg from "../../public/images/projects/AngelloECommerce.png";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
