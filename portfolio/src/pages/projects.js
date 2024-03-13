@@ -7,6 +7,9 @@ import Link from "next/link";
 import React from "react";
 
 import EcommImg from "../../public/images/projects/AngelloECommerce.png";
+import portfolioPic from "../../public/images/projects/PortfolioMain.png";
+import estatePic from "../../public/images/projects/AngelloEstateMain.png";
+
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -90,7 +93,11 @@ const Project = ({ title, type, img, link, github, status }) => {
         </Link>
 
         <div className=" w-full mt-2 flex items-center justify-between">
-          <Link href={github} target="_blank" className="w-10 md:w-8 dark:text-light">
+          <Link
+            href={github}
+            target="_blank"
+            className="w-10 md:w-8 dark:text-light"
+          >
             <GithubIcon />
           </Link>
           <p className="text-red-700">{status ? "Under Development" : ""}</p>
@@ -124,9 +131,7 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 title="Angello E-Commerce"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
+                summary="- Developed a feature-rich e-commerce platform using the MERN stack, facilitating seamless browsing of categories, products, and brands for buyers. Implemented seller functionalities, empowering merchants to manage their brand components efficiently, including product listings, inventory, pricing, and sales analytics."
                 link="https://angelloecommerce.vercel.app/"
                 type="Featured"
                 img={EcommImg}
@@ -135,16 +140,34 @@ local currency."
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Angello Social Media (Angello Book)"
-                link="https://angelloecommerce.vercel.app/"
+                title="Angello Social Media"
+                link=""
                 type="Experimental"
                 img={EcommImg}
-                github="https://github.com/NitinAkuch/E-Commerce"
+                github=""
                 status="Under Development"
               />
             </div>
-            <div className="col-span-6">Projects2</div>
-            <div className="col-span-12">Featured Projects2</div>
+            <div className="col-span-6">
+              <Project
+                title="Portfolio"
+                link="/"
+                type="Featured"
+                img={portfolioPic}
+                github="https://github.com/NitinAkuch/Portfolio"
+                status=""
+              />
+            </div>
+            <div className="col-span-12">
+            <FeaturedProject
+                title="Angello Estate"
+                summary="-Spearheaded the development of a cutting-edge real estate application leveraging the MERN stack, enabling users to seamlessly list and browse properties for sale or rent. Engineered advanced authentication mechanisms using JWT and integrated Google OAuth for streamlined user access. Employed Redux Toolkit for superior state management, ensuring efficient data handling and an enhanced user experience."
+                link="https://angelloestate.onrender.com/"
+                type="Featured"
+                img={estatePic}
+                github="https://github.com/NitinAkuch/AngelloEstate"
+              />
+            </div>
             <div className="col-span-6">Projects3</div>
             <div className="col-span-6">Featured Projects4</div>
           </div>

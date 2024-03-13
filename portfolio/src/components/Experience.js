@@ -2,7 +2,70 @@ import { useScroll, motion } from "framer-motion";
 import React, { useRef } from "react";
 // import LiIcon from "./LiIcon";
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Work = () => {
+  return (
+    <div className="font-medium w-full md:text-sm">
+      <p>Assisted with the development and maintenance of web applications.</p>
+      <br />
+      <p>
+        -Maintained and enhanced two large-scale applications, increasing
+        performance by 20%
+      </p>
+      <br />
+      <p>
+        -Gained hands-on experience with JavaScript, React and React Redux.
+        Implemented React Hooks in 3+ projects, enhancing code reusability and
+        efficiency.
+      </p>
+      <br />
+      <p>
+        -Contributed to frontend development with a primary focus on React-based
+        applications. Collaborated with cross-functional teams to ensure timely
+        delivery of project milestones.
+      </p>
+      <br />
+      <p>
+        -Designed and developed the front-end applications using ReactJS with
+        3,000+ reusable components, Material-UI and Redux. Improved code
+        manageability and reusability by 20%
+      </p>
+      <br />
+      <p>
+        -Improved application performance by optimization and reducing load
+        times resulting increase in page speed across different web browsers.
+      </p>
+      <br />
+      <p>
+        -Designed a responsive user interface through TailwindCSS, and designed
+        page routing through React-Router DOM.
+      </p>
+      <br />
+      <p>
+        -Integrated RESTful services into software solutions, improving response
+        times by 25%
+      </p>
+      <br />
+      <p>
+        -Debugged and resolved application issues to improve user experience.
+        Worked with the QA team to resolve bugs and ensure the delivery of
+        high-quality software products.{" "}
+      </p>
+      <br />
+      <p>
+        -Worked in an Agile development team of 8 to deliver high-quality
+        software under strict timelines.
+      </p>
+      <br />
+      <p>
+        -Assisted in developing software using RESTful APIs with Node.js and
+        Express.js and helped integrate charts libraries based on D3.js and
+        React.js.
+      </p>
+    </div>
+  );
+};
+
+const Details = ({ position, company, companyLink, time, address }) => {
   return (
     <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
       {/* <LiIcon /> */}
@@ -20,7 +83,8 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-lightv xs:text-sm">
           {time} | {address}
         </span>
-        <p className="font-medium w-full md:text-sm">{work}</p>
+        {/* <p className="font-medium w-full md:text-sm">{work}</p> */}
+        <Work />
       </div>
     </li>
   );
@@ -51,11 +115,8 @@ const Experience = () => {
             position="Software Engineer"
             company="Perfexion Information Technologies Pvt Ltd."
             companyLink="https://www.perfexion.co.in"
-            time="2020 December - Present"
+            time="2021 January - Present"
             address="Hyderabad, India"
-            work="Worked on a team responsible for developing new features for Google's 
-          search engine, including improving the accuracy and relevance of search results and 
-          developing new tools for data analysis and visualization."
           />
         </ul>
       </div>
