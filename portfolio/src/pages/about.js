@@ -52,9 +52,9 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium ">
-                Hi, I'm Nitin Akuch, a Full-Stack Web Developer with a passion
+                Hi, I'm Nitin Akuch, a Full-Stack Java Developer with a passion
                 for creating beautiful, functional, and user-centered digital
-                experiences. With 2+ years of experience in the field. I am
+                experiences. With 3+ years of experience in the field. I am
                 always looking for new and innovative ways to bring my clients'
                 visions to life.
               </p>
