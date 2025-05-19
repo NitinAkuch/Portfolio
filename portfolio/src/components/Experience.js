@@ -113,10 +113,10 @@ const Experience = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             position="Software Engineer"
-            company="Perfexion Information Technologies Pvt Ltd."
-            companyLink="https://www.perfexion.co.in"
-            time="2021 January - Present"
-            address="Hyderabad, India"
+            company="Enrichepro Software Pvt Ltd."
+            companyLink=""
+            time="2021 May - Present"
+            address="Pune, India"
           />
         </ul>
       </div>
